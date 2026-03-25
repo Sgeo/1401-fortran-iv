@@ -1,0 +1,21 @@
+set mt1 format=p7b
+at mt1 adc00233.bcd
+set lpt fortran
+set lpt default
+set cdp fortran
+at cdp cdp.txt
+at stkr4 stkr4.txt
+b mt1
+at stkr4 sample.txt
+cont
+at stkr4 boot.txt
+cont
+at stkr4 main.txt
+cont
+at stkr4 library.txt
+cont
+at stkr4 overflow.txt
+cont
+assert bs=999
+echo check cdp.txt for loose cards (might be only older versions of SIMH)
+exit

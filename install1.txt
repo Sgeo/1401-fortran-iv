@@ -1,0 +1,14 @@
+at mt4 system.mt
+at mt1 work.mt
+at cdr main.txt
+set lpt fortran
+set lpt default
+b cdr
+b mt1
+det mt1
+det mt4
+at mt1 system.mt
+b mt1
+at cdr library.txt
+cont
+exit
