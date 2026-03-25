@@ -11,6 +11,8 @@ This is just a collection of files relating to running FORTRAN IV on IBM 1401.
 
 Note that these instructions are for SIMH V3.12-5 and may not work on older versions. In particular, on V3.9 on Windows, cards went into the wrong location.
 
+BE CAREFUL! My scripts write a lot of files, so I'd suggest double checking the scripts or being sure this is not done in a directory with valuable files.
+
 1. Download adc00233.bcd from Pierce Fuller's archive (1401 FORTRAN IV)
 1. Run `i1401 install0.txt`, corresponding to "Building a Fortran Tape Resident System" on page 73 of the manual, extracting 4 card decks from the tape.
 1. Run `i1401 install1.txt`, corresponding to the actual build process on page 74 of the manual.
